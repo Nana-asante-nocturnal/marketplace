@@ -10,7 +10,8 @@ import {
   ChevronLeft, 
   ChevronRight,
   LogOut,
-  User
+  User,
+  Wrench
 } from 'lucide-react';
 
 const Sidebar = ({ onPageChange, isCollapsed, onToggleCollapse, onLogout }) => {
@@ -62,9 +63,7 @@ const Sidebar = ({ onPageChange, isCollapsed, onToggleCollapse, onLogout }) => {
           {!isCollapsed && (
             <div className="flex items-center gap-3">
               <div className="w-9 h-9 bg-primary-500 rounded-lg flex items-center justify-center">
-                <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M8 5v14l11-7z"/>
-                </svg>
+                <Wrench className="w-5 h-5 text-white" />
               </div>
               <h1 className="text-2xl font-bold text-white">Tools</h1>
             </div>
